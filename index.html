@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Testshop Bachelorarbeit Kevin Stolze</title>
+  <!-- Beispiel: Poppins in 400 und 700 -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- Importmap definiert URLs für "three" und "three/..." -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/": "https://unpkg.com/three@0.160.0/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div id="headerBlock">
+      <img id="headerLogo" src="Logow.png">
+      <div id="headerText">
+        <p>Herren</p>
+        <p>Damen</p>
+        <p>Kinder</p>
+      </div>
+    </div>
+  </header>
+  <div id="wholePage">
+    <div id="canvasBlock">
+      <div id="clothingArea">
+        <div id="imageSelector">
+          <div class="selectorIMG">
+            <img class="selectorimages" id="img1" src="Exa1.avif">
+          </div>
+          <div class="selectorIMG">
+            <img class="selectorimages" id="img2" src="Exa2.avif">
+          </div>
+          <div class="selectorIMG">
+            <img class="selectorimages" id="img3" src="Exa3.avif">
+          </div>
+          <div class="selectorIMG">
+            <img class="selectorimages" id="img4" src="canvasImage.png">
+          </div>
+        </div>
+        <div id="viewer">
+          <img id="showIMG1" class="canvasImages" src="Exa1.avif">
+          <img id="showIMG2" class="canvasImages" src="Exa2.avif">
+          <img id="showIMG3" class="canvasImages" src="Exa3.avif">
+          <canvas id="myCanvas"></canvas>
+        </div>
+      </div>
+      <div id="canvasText">
+        <div class="clothingMargin">
+          <p id="environmentText">Umweltfreundliche Materialien</p>
+          <h1 id="clothingName">Kev's Hoodie</h1>
+          <p>Moderner Hoodie BlahBlah Hei Kev was geht ab</p>
+          <p>64,99€</p>
+        </div>
+        <div class="clothingMargin" id="sizeButtons">
+          <button class="sizeButton">XS</button>
+          <button class="sizeButton">S</button>
+          <button class="sizeButton">M</button>
+          <button class="sizeButton">L</button>
+          <button class="sizeButton">XL</button>
+          <button class="sizeButton">XXL</button>
+        </div>
+        <div class="clothingMargin" id="checkout">
+          <p>Shoppe das ganze Outfit!</p>
+          <button class="checkoutButton" id="firstCheck">In den Warenkorb</button>
+          <button class="checkoutButton" id="secondCheck">Merken</button>
+        </div>
+        <div class="clothingMargin" id="infoText">
+          <p>Test</p>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+    <div id="furtherClothes">
+      <div class="clothItem">
+        <img src="Exa1.avif">
+        <div class="clothItemText">
+          <p class="furtherClothesHead">Weiterer Hoodie</p>
+          <p class="furtherClothesDesc">Noch ein weiterer Hoodie im XYZ Stil</p>
+          <p class="furtherClothesPriz">99,99€</p>
+        </div>
+      </div>
+      <div class="clothItem">
+        <img src="Exa2.avif">
+        <div class="clothItemText">
+          <p class="furtherClothesHead">Weiterer Hoodie</p>
+          <p class="furtherClothesDesc">Noch ein weiterer Hoodie im XYZ Stil</p>
+          <p class="furtherClothesPriz">99,99€</p>
+        </div>
+      </div>
+      <div class="clothItem">
+        <img src="Exa3.avif">
+        <div class="clothItemText">
+          <p class="furtherClothesHead">Weiterer Hoodie</p>
+          <p class="furtherClothesDesc">Noch ein weiterer Hoodie im XYZ Stil</p>
+          <p class="furtherClothesPriz">99,99€</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div id="footerArea">
+      <img id="footerLogo" src="Logo.png">
+      <div id="footerText">
+        <p>Impressum</p>
+        <p>Datenschutz</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
